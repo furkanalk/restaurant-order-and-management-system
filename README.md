@@ -9,5 +9,8 @@
 <img width="687" alt="8" src="https://github.com/furkanalk/Winform/assets/93349478/afe59396-47dd-4c87-a8a7-3027b9a45a7c">
 
 ## NOTES
+- Images may be copyrighted. I do not own them and use them only for learning. I do not recommend using this project to earn anything. I'll give the authors credit once I find them. Thank you, in case you are one of them!
+
+## TODO
 - [ ] I'll change the language of the whole project to English. It's in Turkish right now.
 - [ ] SQL files are missing, so you must create your own to be able to run the project. Or wait until I have time to do it and push.

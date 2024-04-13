@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C987E47F-FA54-4A65-A130-16A9F549C45E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RestaurantAtlantis</RootNamespace>
+    <AssemblyName>RestaurantAtlantis</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>atlantislogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormsLogin\LoginMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsLogin\LoginMusteri.Designer.cs">
+      <DependentUpon>LoginMusteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsLogin\LoginPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsLogin\LoginPersonel.Designer.cs">
+      <DependentUpon>LoginPersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsLogin\LoginSef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsLogin\LoginSef.Designer.cs">
+      <DependentUpon>LoginSef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMain\MainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMain\MainScreen.Designer.cs">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMusteri\MusteriAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMusteri\MusteriAnaSayfa.Designer.cs">
+      <DependentUpon>MusteriAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMusteri\MusteriMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMusteri\MusteriMenu.Designer.cs">
+      <DependentUpon>MusteriMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMusteri\MusteriProfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMusteri\MusteriProfil.Designer.cs">
+      <DependentUpon>MusteriProfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMusteri\MusteriSiparişler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMusteri\MusteriSiparişler.Designer.cs">
+      <DependentUpon>MusteriSiparişler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMusteri\MusteriYorumlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMusteri\MusteriYorumlar.Designer.cs">
+      <DependentUpon>MusteriYorumlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsPersonel\PersonelAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsPersonel\PersonelAnaSayfa.Designer.cs">
+      <DependentUpon>PersonelAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsPersonel\PersonelProfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsPersonel\PersonelProfil.Designer.cs">
+      <DependentUpon>PersonelProfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsPersonel\PersonelSiparisler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsPersonel\PersonelSiparisler.Designer.cs">
+      <DependentUpon>PersonelSiparisler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsPersonel\PersonelStok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsPersonel\PersonelStok.Designer.cs">
+      <DependentUpon>PersonelStok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsPersonel\PersonelTarifler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsPersonel\PersonelTarifler.Designer.cs">
+      <DependentUpon>PersonelTarifler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginBilgi.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FormsMain\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMain\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormsSef\SefAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsSef\SefAnaSayfa.Designer.cs">
+      <DependentUpon>SefAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsSef\SefMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsSef\SefMenu.Designer.cs">
+      <DependentUpon>SefMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsSef\SefProfiller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsSef\SefProfiller.Designer.cs">
+      <DependentUpon>SefProfiller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsSef\SefYorumlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsSef\SefYorumlar.Designer.cs">
+      <DependentUpon>SefYorumlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsSef\SefBilanço.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsSef\SefBilanço.Designer.cs">
+      <DependentUpon>SefBilanço.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Siparis.cs" />
+    <Compile Include="Veritabani.cs" />
+    <EmbeddedResource Include="FormsLogin\LoginMusteri.resx">
+      <DependentUpon>LoginMusteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsLogin\LoginPersonel.resx">
+      <DependentUpon>LoginPersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsLogin\LoginSef.resx">
+      <DependentUpon>LoginSef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMain\MainScreen.resx">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMusteri\MusteriAnaSayfa.resx">
+      <DependentUpon>MusteriAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMusteri\MusteriMenu.resx">
+      <DependentUpon>MusteriMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMusteri\MusteriProfil.resx">
+      <DependentUpon>MusteriProfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMusteri\MusteriSiparişler.resx">
+      <DependentUpon>MusteriSiparişler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMusteri\MusteriYorumlar.resx">
+      <DependentUpon>MusteriYorumlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsPersonel\PersonelAnaSayfa.resx">
+      <DependentUpon>PersonelAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsPersonel\PersonelProfil.resx">
+      <DependentUpon>PersonelProfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsPersonel\PersonelSiparisler.resx">
+      <DependentUpon>PersonelSiparisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsPersonel\PersonelStok.resx">
+      <DependentUpon>PersonelStok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsPersonel\PersonelTarifler.resx">
+      <DependentUpon>PersonelTarifler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormsMain\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsSef\SefAnaSayfa.resx">
+      <DependentUpon>SefAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsSef\SefMenu.resx">
+      <DependentUpon>SefMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsSef\SefProfiller.resx">
+      <DependentUpon>SefProfiller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsSef\SefYorumlar.resx">
+      <DependentUpon>SefYorumlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsSef\SefBilanço.resx">
+      <DependentUpon>SefBilanço.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RestaurantDataSet.xsc">
+      <DependentUpon>RestaurantDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantDataSet.xss">
+      <DependentUpon>RestaurantDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="atlantislogo.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

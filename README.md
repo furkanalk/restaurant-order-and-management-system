@@ -1,4 +1,4 @@
-# Resturant System (Winform)
+# Resturant Order & Management System
 <img width="688" alt="1" src="https://github.com/furkanalk/Winform/assets/93349478/ce9adceb-b91f-471f-a1ac-3b0425adb2ca">
 <img width="685" alt="2" src="https://github.com/furkanalk/Winform/assets/93349478/abfdea5d-3b1b-456c-a086-3fd116426f7c">
 <img width="686" alt="3" src="https://github.com/furkanalk/Winform/assets/93349478/9d3c6ed0-b546-4c56-84ce-7d50b508550a">

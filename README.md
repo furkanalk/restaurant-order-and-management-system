@@ -6,7 +6,6 @@
 <img width="686" alt="5" src="https://github.com/furkanalk/Winform/assets/93349478/b71e2a27-6571-4ca0-86d3-d0869bd28e3f">
 <img width="687" alt="6" src="https://github.com/furkanalk/Winform/assets/93349478/25472e22-5707-4b24-9c18-3bce9e97b0e2">
 <img width="686" alt="7" src="https://github.com/furkanalk/Winform/assets/93349478/de49c1d6-3e49-4916-8087-9b57a4296706">
-<img width="687" alt="8" src="https://github.com/furkanalk/Winform/assets/93349478/afe59396-47dd-4c87-a8a7-3027b9a45a7c">
 
 ## NOTES
 - Images may be copyrighted. I do not own them and not recommend using this project to earn anything. I'll give the authors credit once I find them. Thank you, in case you are one of them!
